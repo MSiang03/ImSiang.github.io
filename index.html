@@ -3,51 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name - Personal Website</title>
+    <title>Your Name - Home</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            line-height: 1.6;
             margin: 0;
             padding: 0;
-        }
-        header {
-            background-color: #4a4a4a;
-            color: #ffffff;
-            text-align: center;
-            padding: 1rem;
-        }
-        main {
-            padding: 2rem;
+            background: linear-gradient(45deg, #f3ec78, #af4261);
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
         .container {
-            max-width: 800px;
-            margin: 0 auto;
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 2rem;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+            animation: fadeIn 1s ease-in;
+        }
+        h1 {
+            color: #333;
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+        p {
+            color: #666;
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+        }
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #af4261;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: transform 0.3s ease, background-color 0.3s ease;
+        }
+        .btn:hover {
+            transform: scale(1.1);
+            background-color: #f3ec78;
+            color: #333;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
         }
     </style>
 </head>
 <body>
-    <header>
-        <h1>Your Name</h1>
-        <p>Web Developer | Designer | Your Profession</p>
-    </header>
-    <main>
-        <div class="container">
-            <h2>About Me</h2>
-            <p>Write a brief introduction about yourself here. Mention your skills, interests, and what you're passionate about.</p>
-            
-            <h2>Projects</h2>
-            <ul>
-                <li>Project 1: Brief description</li>
-                <li>Project 2: Brief description</li>
-                <li>Project 3: Brief description</li>
-            </ul>
-            
-            <h2>Contact</h2>
-            <p>Email: your.email@example.com</p>
-            <p>LinkedIn: <a href="https://www.linkedin.com/in/yourprofile">Your LinkedIn Profile</a></p>
-            <p>GitHub: <a href="https://github.com/yourusername">Your GitHub Profile</a></p>
-        </div>
-    </main>
+    <div class="container">
+        <h1>Welcome to My Website</h1>
+        <p>Hi, I'm [Your Name]. This is my personal website.</p>
+        <a href="about.html" class="btn">Learn More About Me</a>
+    </div>
 </body>
 </html>
