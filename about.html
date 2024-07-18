@@ -3,87 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name - About</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f0f0f0;
-        }
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 2rem;
-        }
-        h1 {
-            color: #333;
-            text-align: center;
-            font-size: 2.5rem;
-            margin-bottom: 2rem;
-        }
-        .info-box {
-            background-color: white;
-            border-radius: 10px;
-            padding: 1.5rem;
-            margin-bottom: 1.5rem;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s ease;
-        }
-        .info-box:hover {
-            transform: translateY(-5px);
-        }
-        h2 {
-            color: #af4261;
-            margin-top: 0;
-        }
-        p {
-            color: #666;
-        }
-        .back-btn {
-            display: block;
-            width: 200px;
-            margin: 2rem auto;
-            padding: 10px 20px;
-            background-color: #af4261;
-            color: white;
-            text-align: center;
-            text-decoration: none;
-            border-radius: 5px;
-            transition: background-color 0.3s ease;
-        }
-        .back-btn:hover {
-            background-color: #f3ec78;
-            color: #333;
-        }
-        @keyframes slideIn {
-            from { opacity: 0; transform: translateX(-50px); }
-            to { opacity: 1; transform: translateX(0); }
-        }
-        .info-box {
-            animation: slideIn 0.5s ease forwards;
-            opacity: 0;
-        }
-        .info-box:nth-child(2) { animation-delay: 0.2s; }
-        .info-box:nth-child(3) { animation-delay: 0.4s; }
-    </style>
+    <title>About Me - [Your Name]</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <div class="container">
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="images.html">Images</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
         <h1>About Me</h1>
-        <div class="info-box">
-            <h2>Who I Am</h2>
-            <p>Hello! I'm [Your Name], a [Your Profession] based in [Your Location]. I'm passionate about [Your Interests/Specialties].</p>
-        </div>
-        <div class="info-box">
-            <h2>What I Do</h2>
-            <p>I specialize in [Your Skills/Services]. My goal is to [Your Professional Objective].</p>
-        </div>
-        <div class="info-box">
-            <h2>My Background</h2>
-            <p>I have [X years] of experience in [Your Field]. I've worked on projects such as [Brief Project Descriptions].</p>
-        </div>
-        <a href="index.html" class="back-btn">Back to Home</a>
-    </div>
+        <p>Here you can write about yourself, your background, interests, and experiences.</p>
+    </main>
+    <footer>
+        <p>&copy; 2024 [Your Name]. All rights reserved.</p>
+    </footer>
+    <script src="js/script.js"></script>
 </body>
 </html>
